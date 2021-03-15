@@ -1,0 +1,44 @@
+{
+  "name": "vue-base-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "firebaseauth": "^1.0.0",
+    "font-awesome": "4.7.0",
+    "kuromoji": "^0.1.2",
+    "kuroshiro": "^1.1.2",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "vue": "^2.5.21",
+    "vue-axios": "^2.1.5",
+    "vue-html-to-paper": "^1.3.1",
+    "vue-i18n": "^8.22.4",
+    "vue-recaptcha": "^1.3.0",
+    "vue-router": "^3.0.1",
+    "vue-touch": "^2.0.0-beta.4",
+    "vuetify": "^2.3.21",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "vue-cli-plugin-vuetify": "~2.0.8",
+    "vue-template-compiler": "^2.5.21",
+    "vuetify-loader": "^1.3.0"
+  }
+}
