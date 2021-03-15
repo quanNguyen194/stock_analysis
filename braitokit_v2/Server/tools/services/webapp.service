@@ -1,0 +1,19 @@
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/Braitokit/Server/dist/index.js
+#Type=forking
+Restart=always
+StandardOutput=syslog
+TimeoutSec=90
+SyslogIdentifier=webapp
+User=nobody
+Group=nobody
+EnvironmentFile=/home/Braitokit/Server/.env
+Environment=PATH=/usr/bin:/usr/local/bin
+WorkingDirectory=/home/Braitokit/Server
+Environment=MODE=production
+
+[Install]
+WantedBy=multi-user.target

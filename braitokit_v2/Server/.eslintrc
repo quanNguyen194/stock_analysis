@@ -1,0 +1,69 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+
+        // STYLE
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "strict": "off",
+        "no-mixed-operators": "off",
+        "max-len": "off",
+        "object-curly-newline": "off",
+        "arrow-parens": "off",
+        "function-paren-newline": "off",
+        "wrap-iife": "off",
+        "no-param-reassign": "off",
+        "consistent-return": "off",
+        "comma-dangle": "off",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/no-this-alias": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-var-requires": 0
+    },
+    "overrides": [
+        {
+            "files": [ "**/*.js" ],
+            "rules": {
+                "camelcase": "off",
+                "jsdoc/require-jsdoc": "off",
+                "jsdoc/check-alignment": "off", // Recommended
+                "jsdoc/check-indentation": "off",
+                "jsdoc/check-param-names": "off", // Recommended
+                "jsdoc/check-syntax": "off",
+                "jsdoc/check-tag-names": "off", // Recommended
+                "jsdoc/require-description": "off",
+                "jsdoc/require-param": "off", // Recommended
+                "jsdoc/require-param-description": "off",
+                "jsdoc/require-returns": "off", // Recommended
+                "jsdoc/require-returns-description": "off",
+
+                // STYLE
+                "indent": "off",
+                "quotes": "off",
+                "semi": "off",
+                "strict": "off",
+                "no-mixed-operators": "off",
+                "max-len": "off",
+                "object-curly-newline": "off",
+                "arrow-parens": "off",
+                "function-paren-newline": "off",
+                "wrap-iife": "off",
+                "no-param-reassign": "off",
+                "consistent-return": "off",
+                "comma-dangle": "off",
+                "space-before-function-paren": "off",
+                "@typescript-eslint/no-this-alias": "off"
+            }
+        }
+    ]
+}
