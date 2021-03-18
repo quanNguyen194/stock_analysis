@@ -23,17 +23,18 @@ export default {
   async mounted () {
     const path = this.$router.currentRoute.path
     if (!['/login', '/reset-password', '/forgot-password'].includes(path)) {
-      const verifyRes = await this.verifyToken()
-      if (!verifyRes) {
-        return this.$router.replace({ name: 'login' })
-      }
+      // const verifyRes = await this.verifyToken()
+      // if (!verifyRes) {
+      //   return this.$router.replace({ name: 'login' })
+      // }
 
-      const userRole = verifyRes.user.role
-      if (userRole === 'admin' && !path.includes('admin') && !verifyRes.is_preview) {
+      // const userRole = verifyRes.user.role
+      const userRole = 'user'
+      if (userRole === 'admin' && !path.includes('admin')) {
         return this.$router.replace('/admin/company')
       }
 
-      if (path === '/admin/company' && (userRole !== 'admin' || verifyRes.is_preview)) {
+      if (path === '/admin/company' && (userRole !== 'admin')) {
         return this.$router.replace('/menu')
       }
     }
